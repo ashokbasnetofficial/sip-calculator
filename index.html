@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SIP-Calculator</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <div class="container">
+ <h1>SIP-Calculator</h1>
+ <div class="form-box">
+  <form action="" class="sip-form">
+    <div class="input-box">
+      <label for="form-input" class="input-label">Investment period</label>
+      <select name="select" id="selectbox"  class="form-input">
+        <option value="0">Choose...</option>
+      </select>
+      <span class="error_message"></span>
+    </div>
+    <div class="input-box">
+      <label for="form-input" class="input-label">Quarterly investment amount</label>
+      <input type="number" name="form-input" placeholder="Rs. invest amount" class="form-input">
+      <span class="error_message"></span>
+    </div>
+    <div class="input-box">
+        <label for="billshare" class="input-label">Expected annual return</label>
+        <input type="number" name="form-input" placeholder="Percent(%)" class="form-input">
+        <span class="error_message"></span>
+        </div>
+        <div class="input-box">
+          <label for="billshare" class="input-label">Years</label>
+          <input type="number" name="form-input" placeholder="Years" class="form-input">
+          <span class="error_message"></span>
+          </div>
+        
+        <div class="input-box">
+      <input type="submit" value="Calculate"  class="submit">
+        </div>
+       <div class="loader">
+      <img src="img/Facebook-1s-200px.gif"/>
+      </div>
+        <div class="input-box result">
+          <span class="results"></span>
+          <span class="results"></span>
+          <span class="results"></span>
+        </div>
+
+    
+  </form>
+ </div>
+ </div>
+
+<script src="./main.js"></script>
+</body>
+</html>
